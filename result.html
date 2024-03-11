@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body style="font-family:sans-serif; margin: 4%;">
+    <div style="margin: 4%;">
+        <b style="color: rgb(80, 14, 14);">Pattern to find:</b>  {{ User_name }} <br />
+        <b style="color: rgb(78, 19, 19);">Input Text String:</b>  {{ User_mail }} <br />
+        <b style="color: rgb(94, 21, 21);">Function given:</b>  {{ func }} <br /> <br />
+    </div>
+
+    <div style="margin: 4%;">
+        <h3>Output of the given regex:</h3>
+        {% for each in result %}
+            <p style="color: rgb(114, 223, 26);">{{ each }}</p>
+        {% endfor %}
+    </div>
+
+    <form style="margin: 4%;" action="/">
+        <button style="background-color:#0718af; color: rgb(226, 224, 110); border-radius: 5px;" type="submit">New Regex</button>
+    </form>
+</body>
+</html>
